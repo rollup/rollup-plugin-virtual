@@ -1,0 +1,32 @@
+{
+  "name": "rollup-plugin-virtual",
+  "version": "1.0.0",
+  "description": "Load modules from memory",
+  "main": "dist/rollup-plugin-virtual.cjs.js",
+  "module": "dist/rollup-plugin-virtual.es.js",
+  "scripts": {
+    "test": "mocha",
+    "pretest": "npm run build",
+    "build": "rollup -c",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rollup/rollup-plugin-virtual.git"
+  },
+  "keywords": [
+    "rollup"
+  ],
+  "author": "Rich Harris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rollup/rollup-plugin-virtual/issues"
+  },
+  "homepage": "https://github.com/rollup/rollup-plugin-virtual#readme",
+  "devDependencies": {
+    "eslint": "^4.4.1",
+    "mocha": "^3.5.0",
+    "rollup": "^0.47.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  }
+}
