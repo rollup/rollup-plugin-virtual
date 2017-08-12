@@ -19,6 +19,9 @@ describe('rollup-plugin-virtual', () => {
 			'src/foo.js': 'export default 42'
 		});
 
-		assert.equal(plugin.load(path.resolve('src/foo.js')), 'export default 42');
+		const resolved = plugin.resolveId('./foo.js', 'src/main.js');
+
+		assert.equal(resolved, `\0virtual:${path.resolve('src/foo.js')}`);
+		assert.equal(plugin.load(resolved), 'export default 42');
 	});
 });
