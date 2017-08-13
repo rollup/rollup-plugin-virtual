@@ -1,9 +1,12 @@
 {
   "name": "rollup-plugin-virtual",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load modules from memory",
   "main": "dist/rollup-plugin-virtual.cjs.js",
   "module": "dist/rollup-plugin-virtual.es.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "mocha",
     "pretest": "npm run build",
