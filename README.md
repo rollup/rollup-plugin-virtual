@@ -30,6 +30,27 @@ export default {
 };
 ```
 
+If there were named exports:
+```js
+// src.main.js
+export {foo, bar} from 'foobar';
+
+console.log(foo, bar);
+```
+
+```js
+// rollup.config.js
+// ...
+    virtual ({
+      'foobar': `
+        export const foo = vendor._foobar.foo;
+        export const bar = vendor._foobar.bar;
+      `
+    })
+```
+
+Use this plugin __before__ any other one like node-resolve or commonjs so they do not alter the output. 
+
 
 ## License
 
