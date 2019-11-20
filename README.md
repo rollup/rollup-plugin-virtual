@@ -1,3 +1,7 @@
+# Moving
+
+We're in the process of moving this plugin to a new home. Please standy by...
+
 # rollup-plugin-virtual
 
 Load modules from memory.
