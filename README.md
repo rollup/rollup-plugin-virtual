@@ -1,6 +1,6 @@
-# Moving
+# Moved
 
-We're in the process of moving this plugin to a new home. Please standy by...
+This module has moved and is now available at [@rollup/plugin-virtual](https://github.com/rollup/plugins). Please update your dependencies. This repository is no longer maintained.
 
 # rollup-plugin-virtual
 
